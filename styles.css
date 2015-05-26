@@ -1,10 +1,16 @@
+body {
+  background-color:#8FD4D9;
+}
 header {
   border: 1px solid black;
   position:relative;
+  background-color:white;
 }
-h1 {
+.header {
   text-align:center;
   padding:0.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.5em;
 }
 .fa-bars {
   float:right;
@@ -12,6 +18,7 @@ h1 {
   top:0;
   right:0;
   padding:0.5em;
+  font-size:1.5em;
 }
 .fa-calendar-o {
   float:left;
@@ -19,6 +26,7 @@ h1 {
   top:0;
   left:0;
   padding:0.5em;
+  font-size:1.5em;
 }
 .main-container {
   margin:0 auto;
@@ -30,6 +38,7 @@ h1 {
 }
 .search-bar {
   width: 100%;
+  display:none;
 }
 footer {
   box-sizing: border-box;
@@ -40,6 +49,7 @@ footer {
   left: 0;
   height: 1.5em;
   border: 1px solid black;
+  background-color:white;
 }
 .add-appointment {
   margin-left:46%;
@@ -51,4 +61,28 @@ footer {
   border: 2px dashed black;
   background-color:red;
   height:5em;
+  display:none;
+}
+.new-appointment-form {
+  background-color:#8FD4D9;
+  background-size:100%;
+}
+.new-appointment-heading {
+  font-family: Helvetica;
+  font-size:2.5em;
+  margin-top:1em;
+  text-align:center;
+  color:white;
+}
+.appointment-form {
+  box-sizing:border-box;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top:20%;
+}
+.appointment-form input {
+  font-size:2em;
+  text-align:center;
+  margin-bottom: 0.5em;
+  border-radius:10px;
 }
