@@ -1,1 +1,31 @@
-//testing the merging of data in files vai git hub
+creating a mobile app that allow people to create appts that get added to a list.
+
+
+////events.js////
+
+  //logic to add appointments
+
+  $(etc.).click (function {
+  var...
+
+  list.add(appt-data)
+  }
+
+  $(etc.) function {
+  logic to remove appointments
+)};
+
+////add-remove.js////
+
+var list = []
+
+  add: function ()
+
+  remove: function ()
+
+////render.js////
+
+-home screen (search, displays stored appts)
+-new appt. (inputs for title, time, where, address)
+-appt details screen (edit button, back button to list view, details of appointment, map, weather)
+-edit (able to change all input fields, delete appt. with confirmation of delete)
