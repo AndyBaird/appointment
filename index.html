@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Appointments</title>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="general_reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -13,8 +14,21 @@
     <header>
 
       <i class="fa fa-calendar-o"></i>
-      <h1> Appointments </h1>
-      <i class="fa fa-bars"></i>
+      <h1 class="header"> APPOINTMATIC </h1>
+
+      <div class="wrap">
+
+        <div class="main">
+          <i class="fa fa-bars"></i>
+        </div>
+
+          <div class="menu">
+          <a href="#">View Schedule</a>
+          <a href="#"> Appointment</a>
+          <a href="#">Cancel Appointment</a>
+        </div>
+
+      </div>
 
     </header>
 
@@ -34,6 +48,21 @@
         </button>
 
       </footer>
+    </div>
+
+    <div class="new-appointment-form">
+
+      <h1 class="new-appointment-heading">New Appointment</h1>
+
+      <form class="appointment-form">
+
+        <input class="title-input" placeholder="Title"></input>
+        <input class="date-input"placeholder="Date"></input>
+        <input class="time-input" placeholder="Time"></input>
+        <input class="address-input" placeholder="Address"></input>
+        <input class="weather-input" placeholder="Weather"></input>
+
+      </form>
     </div>
     <script src="events.js"></script>
   </body>

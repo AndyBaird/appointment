@@ -1,10 +1,17 @@
+body {
+  background-color:#8FD4D9;
+}
 header {
   border: 1px solid black;
   position:relative;
+  background-color:#f0f1ee;
 }
-h1 {
+.header {
   text-align:center;
   padding:0.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:1.7em;
+  text-shadow: 3px 3px white;
 }
 .fa-bars {
   float:right;
@@ -12,13 +19,46 @@ h1 {
   top:0;
   right:0;
   padding:0.5em;
+  font-size:1.7em;
+  text-shadow: 3px 3px white;
+  height:1em;
+  width:1em;
 }
+.fa-bars:hover {
+  color:#8FD4D9;
+  text-shadow: 1px 1px black;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top:0
+}
+.menu {
+  background-color:white;
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  right: -100px;
+  z-index: 3;
+  transition: right .5s ease;
+}
+.wrap:hover .menu {
+   right: 0px;
+ }
+ .menu a {
+   text-decoration:none;
+   font-family:Helvetica;
+ }
 .fa-calendar-o {
   float:left;
   position:absolute;
   top:0;
   left:0;
   padding:0.5em;
+  font-size:1.7em;
+  text-shadow: 3px 3px white;
 }
 .main-container {
   margin:0 auto;
@@ -30,6 +70,11 @@ h1 {
 }
 .search-bar {
   width: 100%;
+  border-radius:2em;
+  font-size:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+  text-align:center;
 }
 footer {
   box-sizing: border-box;
@@ -38,17 +83,56 @@ footer {
   width:100%;
   bottom:0;
   left: 0;
-  height: 1.5em;
+  height: 2em;
   border: 1px solid black;
+  background-color:#f0f1ee;
 }
 .add-appointment {
   margin-left:46%;
   margin-right:46%;
-  margin-top: 0.2em;
+  margin-top: 0.4em;
   margin-bottom: 0.2em;
+  height:2em;
+  width:5em;
+  background-color:white;
+  border-radius:15px;
+  color:black;
+  }
+.add-appointment:hover {
+  background-color:#8FD4D9;
+  color:white;
   }
 .active-appointments {
   border: 2px dashed black;
   background-color:red;
   height:5em;
+}
+.new-appointment-form {
+  background-color:#8FD4D9;
+  background-size:100%;
+  display:none;
+}
+.new-appointment-heading {
+  font-family: Helvetica;
+  font-size:2.5em;
+  margin-top:1em;
+  text-align:center;
+  color:white;
+  border-bottom: 1px dashed white;
+  padding-bottom:1em;
+  display:none;
+}
+.appointment-form {
+  box-sizing:border-box;
+  margin-right:10%;
+  margin-left:10%;
+  margin-top:10%;
+  display:none;
+}
+.appointment-form input {
+  font-size:2em;
+  text-align:center;
+  margin-bottom: 0.5em;
+  border-radius:10px;
+  display:none;
 }
