@@ -84,7 +84,7 @@ header {
   margin-bottom:1em;
   text-align:center;
 }
-footer {
+footer, .btn-delete-appointment {
   box-sizing: border-box;
   position:absolute;
   margin: 0 auto;
@@ -95,7 +95,7 @@ footer {
   border: 1px solid black;
   background-color:#f0f1ee;
 }
-.add-appointment {
+.btn-add-appointment, .btn-delete-appointment{
   margin-left:46%;
   margin-right:46%;
   margin-top: 0.4em;
@@ -105,6 +105,10 @@ footer {
   background-color:white;
   border-radius:15px;
   color:black;
+  z-index: 1;
+  }
+.btn-delete-appointment{
+  display: none;
   }
 .add-appointment:hover {
   background-color:#8FD4D9;

@@ -7,65 +7,84 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="general_reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="details-style.css">
 
   </head>
   <body>
     <header>
-
       <i class="fa fa-calendar-o"></i>
       <h1 class="header"> APPOINT-O-MATIC </h1>
-
-      <div class="wrap">
-
-        <div class="main">
-          <i class="fa fa-bars"></i>
-        </div>
-
-        <div class="menu">
-          <a href="#">View Schedule</a>
-
-          <a href="#">Add Appointment</a>
-
-          <a href="#">Cancel Appointment</a>
-        </div>
-
-      </div>
-
+        <div class="wrap">
+          <div class="main">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="menu">
+            <a href="#">View Schedule</a>
+            <a href="#">Add Appointment</a>
+            <a href="#">Cancel Appointment</a>
+          </div>
+       </div>
     </header>
 
-    <div class="main-container">
-
+  <div class="main-container">
       <form class="search-form">
         <input class="search-bar" placeholder="Search">
       </form>
-
       <ul class="active-appointments">
       </ul>
-
-
-      <footer>
-
-        <button class="add-appointment"><i class="fa fa-plus"></i>
-        </button>
-
-      </footer>
-    </div>
-
+<!--new appointments-->
+  <script id="new-appointment" type: "text/HTML">
     <div class="new-appointment-form">
-
       <h1 class="new-appointment-heading">New Appointment</h1>
-
-      <form class="appointment-form">
-
-        <input class="title-input" placeholder="Title"></input>
-        <input class="date-input"placeholder="Date"></input>
-        <input class="time-input" placeholder="Time"></input>
-        <input class="address-input" placeholder="Address"></input>
-        <input class="weather-input" placeholder="Weather"></input>
-
-      </form>
+        <form class="appointment-form">
+          <input class="title-input" placeholder="Title"></input>
+          <input class="date-input"placeholder="Date"></input>
+          <input class="time-input" placeholder="Time"></input>
+          <input class="address-input" placeholder="Address"></input>
+        </form>
     </div>
-    <script src="events.js"></script>
+    <footer class="new-appointment-footer">
+      <a class="btn-submit-new" href="#appt/new">Add
+      </a>
+    </footer>
+  </script>
+
+  <!--editing appointments-->
+  <script id="edit-appointment" type: "text/HTML">
+    <div class="edit-appointment-form">
+      <h1 class="edit-appointment-heading">Edit Appointment</h1>
+        <form class="edit-appointment-form">
+          <input class="title-input" <%- title%> ></input>
+          <input class="date-input" <%- date%></input>
+          <input class="time-input" <%- time%></input>
+          <input class="address-input" <%- address%></input>
+        </form>
+    </div>
+  </script>
+ 
+ <!--detail of appointments-->
+<!--<script id="details" type: "text/HTML">-->
+    <div class="details-page">
+      <h1 class="details-heading">Details</h1>
+       <span class="details-appointment-title"></span>
+       <span class="details-appointment-date"></span>
+       <span class="details-appointment-time"></span>
+       <span class="details-appointment-address"></span>
+       <span class="details-appointment-map"></span>
+       <div class="details-weather-container"></div>
+       <span class="details-appointment-notes"></span>
+       <button class="btn-delete-appointment">X</button>
+    </div>
+  <!--</script>-->
+<!-- end of details-->
+
+    <footer>
+      <button class="btn-add-appointment"><i class="fa fa-plus"></i>
+      </button>
+    </footer>
+  </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="events.js"></script>
   </body>
 </html>
