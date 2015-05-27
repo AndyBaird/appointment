@@ -29,3 +29,8 @@ var list = []
 -new appt. (inputs for title, time, where, address)
 -appt details screen (edit button, back button to list view, details of appointment, map, weather)
 -edit (able to change all input fields, delete appt. with confirmation of delete)
+
+
+on the click of the plus button...
+the JS toggles to "hide" for the current appointments
+the JS toggles "show" for the new-appointments
