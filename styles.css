@@ -1,5 +1,6 @@
 body {
   background-color:#8FD4D9;
+  overflow-x:hidden;
 }
 header {
   border: 1px solid black;
@@ -36,18 +37,27 @@ header {
   top:0;
 }
 .menu {
-  background-color:white;
-  width: 100px;
+  background-color:#f0f1ee;
+  padding:0.5em;
+  padding-left:3.5em;
+  line-height:1.5em;
+  width: 170px;
+  height:6em;
   position: absolute;
   top: 60px;
-  z-index: 3;
 }
 .wrap:hover .menu {
-   right: 0px;
+   right: -7px;
  }
  .menu a {
+   font-family: 'Open Sans Condensed', sans-serif;
    text-decoration:none;
    font-family:Helvetica;
+   margin-bottom:0.5em;
+   color:black;
+ }
+ .menu a:hover {
+   color:#8FD4D9;
  }
 .fa-calendar-o {
   float:left;
