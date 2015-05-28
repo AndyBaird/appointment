@@ -11,9 +11,10 @@ app.router.route('appt/new', function () {
 	  $('input[name=time-input]').val(),
 	  $('input[name=address-input]').val()
 	);
+//	return addAppt;
 	app.appts.add(addAppt);
 
-	document.location = '#appt/new';
+//	document.location = 'appt/new';
 
 	});
 
