@@ -14,8 +14,10 @@ app.router.route('appt/new', function () {
 //	return addAppt;
 	app.appts.add(addAppt);
 
-//	document.location = 'appt/new';
-
-	});
-
 });
+});
+
+app.router.route('home', goHome);
+function goHome () {
+	app.show('home');
+};
