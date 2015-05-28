@@ -3,5 +3,5 @@ $(function (){
 
   app.appts = new app.ObjectStore();
 
-  // Backbone.history.loadUrl();
+   Backbone.history.loadUrl();
 });

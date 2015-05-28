@@ -1,8 +1,9 @@
-var appt = app.appts.getById(id);
-app.show('new-appointment', appt);
+app.router.route('appt/new', function () {
 
-$('.appointment-form').on('submit', function (e){
-e.preventDefault();
+	app.show('new-appointment');
+
+	$('.appointment-form').on('submit', function (e) {
+	e.preventDefault();
 
 	var addAppt = new app.Appt(
 	  $('input[name=title-input]').val(),
@@ -10,4 +11,10 @@ e.preventDefault();
 	  $('input[name=time-input]').val(),
 	  $('input[name=address-input]').val()
 	);
+	app.appts.add(addAppt);
+
+	document.location = '#appt/new';
+
+	});
+
 });

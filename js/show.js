@@ -3,5 +3,5 @@ app.show = function (templateId, appt) {
   var templateFn = _.template(templateHtml, {variable: 'm'});
   var result = templateFn(appt);
 
-  $('.main-content').html(result);
+  $('.main-container').html(result);
 };

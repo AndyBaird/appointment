@@ -3,4 +3,7 @@ app.appts = function (apptTitle, date, apptTime, address) {
   this.date = date;
   this.apptTime = time;
   this.address = address;
+
+  return app.appts;
+
 };
