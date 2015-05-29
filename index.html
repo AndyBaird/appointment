@@ -56,19 +56,18 @@
     <script id="edit-appointment" type = "text/HTML">
        <header>
         <i class="fa fa-calendar-o"></i>
-          <div class="wrap">
-         </div>
+        <h1>Edit Appointment</h1>
       </header>
       <div class="edit-appointment-form">
           <form class="edit-appointment-form">
-            <input class="title-input" <%- title%> ></input>
-            <input class="date-input" <%- date%></input>
-            <input class="time-input" <%- time%></input>
-            <input class="address-input" <%- address%></input>
+            <input class="title-input">
+            <input class="date-input">
+            <input class="time-input">
+            <input class="address-input">
           </form>
       </div>
       <footer>
-        <button class="btn-save" href="#home"><p>Save</p>
+        <button class="btn-save"> <a href="#home"><p>Save</p></a>
         </button>
       </footer>
     </script>
@@ -78,21 +77,21 @@
         <header>
           <i class="fa fa-calendar-o"></i>
           <h1 class="header"> Details </h1>
-            <div class="wrap">
-           </div>
         </header>
-        <div class="details-page">
-           <span class="details-appointment-title"></span>
-           <span class="details-appointment-date"></span>
-           <span class="details-appointment-time"></span>
-           <span class="details-appointment-address"></span>
-           <span class="details-appointment-map"></span>
-           <div class="details-weather-container"></div>
-           <span class="details-appointment-notes"></span>
-           <button class="btn-delete-appointment">X</button>
-        </div>
+          <div class="details-page">
+             <span class="details-appointment-title"></span>
+             <span class="details-appointment-date"></span>
+             <span class="details-appointment-time"></span>
+             <span class="details-appointment-address"></span>
+             <span class="details-appointment-map"></span>
+             <div class="details-weather-container"></div>
+             <span class="details-appointment-notes"></span>
+             <button class="btn-delete-appointment">X</button>
+          </div>
         <footer>
-          <button class="btn-home"><p>&#8592;</p>
+          <button class="btn-home"> <a href="#home"><p>&#8592;</p></a>
+          </button>
+          <button class="btn-edit"> <a href="#appt/edit"><p>Edit</p></a>
           </button>
         </footer>
     </script>
