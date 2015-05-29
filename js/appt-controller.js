@@ -6,8 +6,8 @@
 	function apptListController () {
 		app.show('home', { appts: app.appts });
 	}
-	app.router.route('appt/new', new);
-	function new () {
+	app.router.route('appt/new', newAppt);
+	function newAppt () {
 		app.show('new-appointment');
 	};
 });
