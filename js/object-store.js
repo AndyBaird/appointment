@@ -3,21 +3,19 @@ app.ObjectStore = function () {
 };
 
 app.ObjectStore.prototype = {
-  add: function (obj) {
-    this.all[obj.id] = obj;
+  add: function (appointment) {
+    this.all[appointment.title] = appointment;
+    this.save();
   },
-
-  getById: function (id) {
-    return this.all[id];
+  load: function () {
+    this.all = JSON.parse(localStorage.getItem('ObjectStore')) || [];
   },
+  save: function () {
+    localStorage.setItem('ObjectStore', JSON.stringify(this.all));
+  }
 
-  remove: function (id) {
-    delete this.all[id];
-  },
-
-  // forEach: function (fn) {
-  //   for (var key in this.all) {
-  //     fn(this.all[key]);
-  //   }
-  // }
+  // remove: function (id) {
+  //   delete this.all[id];
+  // },
 };
+app.appts = new app.ObjectStore();

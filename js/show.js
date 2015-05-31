@@ -1,7 +1,7 @@
-app.show = function (templateId, appt) {
+app.show = function (templateId, model) {
   var templateHtml = $('#' + templateId).html();
-  var templateFn = _.template(templateHtml, {variable: 'm'});
-  var result = templateFn(appt);
+  var templateFn = _.template(templateHtml, { variable: 'm' });
+  var result = templateFn(model);
 
   $('.main-container').html(result);
 };

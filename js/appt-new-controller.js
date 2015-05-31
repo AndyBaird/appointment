@@ -1,23 +1,26 @@
-app.router.route('appt/new', function () {
+$(function () {
+//  'use strict';
 
-	app.show('new-appointment');
+	app.router.route('appt/new', function () {
 
-	$('.appointment-form').on('submit', function (e) {
-	e.preventDefault();
+		app.show('new-appointment');
 
-	var addAppt = new app.Appt(
-	  $('input[name=title-input]').val(),
-	  $('input[name=date-input]').val(),
-	  $('input[name=time-input]').val(),
-	  $('input[name=address-input]').val()
-	);
-//	return addAppt;
-	app.appts.add(addAppt);
+		$('.btn-save-new').on('click', function () {
+		  var title = $('input[name=title-input]').val();
+			var date = $('input[name=date-input]').val();
+			var time = $('input[name=time-input]').val();
+			var address = $('input[name=address-input]').val();
+
+			app.appts.add(new app.Appointment(title, date, time, address));
+
+			app.show('home', app.appts.all);
+
+			$('input').val('');
+		});
+	});
 
 });
-});
-
 app.router.route('home', goHome);
-function goHome () {
-	app.show('home');
-};
+	function goHome () {
+		app.show('home', app.appts.all);
+	};

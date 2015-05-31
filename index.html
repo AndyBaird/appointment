@@ -22,10 +22,19 @@
         <form class="search-form">
           <input class="search-bar" placeholder="Search">
         </form>
-          <ul class="active-appointments">
-            <a class="btn-details" href="#appt/details">Details
-            </a>
+          <% for (var key in m) {%>
+            <ul class="active-appointments">
+              <a class="btn-details" href="#appt/details">Details
+              </a>
+                <li>
+                  <span><%- m[key].title %></span>
+                  <span><%- m[key].date %></span>
+                  <span><%- m[key].time %></span>
+                  <span><%- m[key].address %></span>
+                </li>
+            <% } %>
           </ul>
+
       <footer class="new-appointment-footer">
         <a class="btn-submit-new" href="#appt/new">Add
         </a>
@@ -36,11 +45,11 @@
     <script id="new-appointment" type = "text/HTML">
       <header>
         <i class="fa fa-calendar-o"></i>
-        <h1 class="header"> New Appointment </h1>
+        <h1 class="header"> New Apointment </h1>
       </header>
       <div class="new-appointment-container">
           <form class="appointment-form">
-          <input name="title-input" placeholder="Title">
+            <input name="title-input" type="text" placeholder="Title" autofocus>
             <input name="date-input"placeholder="Date">
             <input name="time-input" placeholder="Time">
             <input name="address-input" placeholder="Address">
@@ -60,10 +69,10 @@
       </header>
       <div class="edit-appointment-form">
           <form class="edit-appointment-form">
-            <input class="title-input">
-            <input class="date-input">
-            <input class="time-input">
-            <input class="address-input">
+            <input class="title-input" <%- _.values(m).title %>>
+            <input class="date-input"<%- _.values(m).date %>>
+            <input class="time-input"<%- _.values(m).time %>>
+            <input class="address-input"<%- _.values(m).address %>>
           </form>
       </div>
       <footer>

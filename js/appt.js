@@ -1,9 +1,6 @@
-app.appts = function (apptTitle, date, apptTime, address) {
-  this.apptTitle = title;
+app.Appointment = function (title, date, time, address) {
+  this.title = title;
   this.date = date;
-  this.apptTime = time;
+  this.time = time;
   this.address = address;
-
-  return app.appts;
-
 };
