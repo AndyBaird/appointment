@@ -69,7 +69,6 @@ header {
   text-shadow: 3px 3px white;
 }
 .main-container {
-  margin:0 auto;
   display:block;
   max-width: 50%;
 }

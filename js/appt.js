@@ -7,3 +7,5 @@ app.appts = function (apptTitle, date, apptTime, address) {
   return app.appts;
 
 };
+
+console.log(app.appts);

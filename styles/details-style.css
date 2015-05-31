@@ -1,8 +1,27 @@
-
+ .details-pg-header {
+   width:100%;
+ }
  .details-appointment-title, .details-appointment-date,
  .details-appointment-time, .details-appointment-address,
  .details-appointment-map, .details-weather-container, .details-appointment-notes {
 	border: 1px solid black;
-	padding: 1em;
+	padding-bottom: 1em;
 	background: white;
+  display:inline-block;
+  position:relative;
+  text-align:center;
+ }
+ .details-appointment-title, .details-appointment-address, .details-appointment-map, .details-weather-container, .details-appointment-notes {
+   width:40em;
+   height:3em;
+ }
+ .details-appointment-date, .details-appointment-time {
+   width:10em;
+   height:1.5em;
+ }
+ .details-appointment-date {
+   float:left;
+ }
+ .details-appointment-time {
+   float:right;
  }
