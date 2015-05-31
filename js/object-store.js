@@ -15,9 +15,5 @@ app.ObjectStore.prototype = {
     delete this.all[id];
   },
 
-  // forEach: function (fn) {
-  //   for (var key in this.all) {
-  //     fn(this.all[key]);
-  //   }
-  // }
 };
+app.store = new app.ObjectStore();

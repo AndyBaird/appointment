@@ -36,11 +36,11 @@
     <script id="new-appointment" type = "text/HTML">
       <header>
         <i class="fa fa-calendar-o"></i>
-        <h1 class="header"> New Appointment </h1>
+        <h1 class="header"> <%- m.title %> </h1>
       </header>
       <div class="new-appointment-container">
           <form class="appointment-form">
-          <input name="title-input" placeholder="Title">
+            <input name="title-input" type="text" placeholder="Title" autofocus>
             <input name="date-input"placeholder="Date">
             <input name="time-input" placeholder="Time">
             <input name="address-input" placeholder="Address">
