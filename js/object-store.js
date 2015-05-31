@@ -3,17 +3,15 @@ app.ObjectStore = function () {
 };
 
 app.ObjectStore.prototype = {
-  add: function (obj) {
-    this.all[obj.id] = obj;
-  },
+  add: function (appointment) {
+    this.all[appointment.title] = appointment;
+  }
+  // getById: function (id) {
+  //   return this.all[id];
+  // },
 
-  getById: function (id) {
-    return this.all[id];
-  },
-
-  remove: function (id) {
-    delete this.all[id];
-  },
-
+  // remove: function (id) {
+  //   delete this.all[id];
+  // },
 };
-app.store = new app.ObjectStore();
+app.appts = new app.ObjectStore();
