@@ -14,6 +14,10 @@ header {
   font-size:1.7em;
   text-shadow: 3px 3px white;
 }
+.main-container {
+  display:block;
+  max-width: 100%;
+}
 .fa-bars {
   float:right;
   position:absolute;
@@ -36,29 +40,6 @@ header {
   z-index: 2;
   top:0;
 }
-.menu {
-  background-color:#f0f1ee;
-  padding:0.5em;
-  padding-left:3.5em;
-  line-height:1.5em;
-  width: 170px;
-  height:6em;
-  position: absolute;
-  top: 60px;
-}
-.wrap:hover .menu {
-   right: -7px;
- }
- .menu a {
-   font-family: 'Open Sans Condensed', sans-serif;
-   text-decoration:none;
-   font-family:Helvetica;
-   margin-bottom:0.5em;
-   color:black;
- }
- .menu a:hover {
-   color:#8FD4D9;
- }
 .fa-calendar-o {
   float:left;
   position:absolute;
@@ -67,10 +48,6 @@ header {
   padding:0.5em;
   font-size:1.7em;
   text-shadow: 3px 3px white;
-}
-.main-container {
-  display:block;
-  max-width: 50%;
 }
 .search-form {
   display:block;
