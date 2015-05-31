@@ -5,10 +5,14 @@ app.ObjectStore = function () {
 app.ObjectStore.prototype = {
   add: function (appointment) {
     this.all[appointment.title] = appointment;
+    this.save();
+  },
+  load: function () {
+    this.all = JSON.parse(localStorage.getItem('ObjectStore')) || [];
+  },
+  save: function () {
+    localStorage.setItem('ObjectStore', JSON.stringify(this.all));
   }
-  // getById: function (id) {
-  //   return this.all[id];
-  // },
 
   // remove: function (id) {
   //   delete this.all[id];
