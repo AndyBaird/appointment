@@ -63,7 +63,7 @@
 
   <!--TEMPLATE editing appointments-->
     <script id="edit-appointment" type = "text/HTML">
-       <header>
+       <header class="edit-header">
         <i class="fa fa-calendar-o"></i>
         <h1>Edit Appointment</h1>
       </header>
@@ -75,9 +75,8 @@
             <input class="address-input"<%- _.values(m).address %>>
           </form>
       </div>
-      <footer>
-        <button class="btn-save"> <a href="#home"><p>Save</p></a>
-        </button>
+      <footer class="edit-footer">
+        <a class="btn-save" href="#home"><p>&#10003</p></a>
       </footer>
     </script>
 
@@ -97,11 +96,9 @@
              <span class="details-appointment-notes"></span>
              <button class="btn-delete-appointment">X</button>
           </div>
-        <footer>
-          <button class="btn-home"> <a href="#home"><p>&#65513;</p></a>
-          </button>
-          <button class="btn-edit"> <a href="#appt/edit"><p>Edit</p></a>
-          </button>
+        <footer class="details-footer">
+          <a class="btn-home" a href="#home"><p>&#65513;</p></a>
+          <a class="btn-edit" a href="#appt/edit"><p>Edit</p></a>
         </footer>
     </script>
     <!-- end of details-->
