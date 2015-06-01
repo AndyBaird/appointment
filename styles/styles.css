@@ -1,64 +1,25 @@
 body {
-  background-color:#8FD4D9;
-  overflow-x:hidden;
+  width:100%;
+  background: url('http://demo.iconmedia.gy/ftci/templates/gk_university/images/parallax_bg.jpg');
+  y-overflow:hidden;
 }
 header {
-  border: 1px solid black;
+  border: 0.5px solid black;
   position:relative;
-  background-color:#f0f1ee;
+  background-color:#61A0AD;
+  opacity: 0.9;
 }
 .header {
   text-align:center;
   padding:0.5em;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size:1.7em;
-  text-shadow: 3px 3px white;
+  font-size:2em;
+  color:#EEEDCF;
 }
-.fa-bars {
-  float:right;
-  position:absolute;
-  top:0;
-  right:0;
-  padding:0.5em;
-  font-size:1.7em;
-  text-shadow: 3px 3px white;
-  height:1em;
-  width:1em;
+.main-container {
+  display:block;
+  max-width: 100%;
 }
-.fa-bars:hover {
-  color:#8FD4D9;
-  text-shadow: 1px 1px black;
-}
-.main {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  top:0;
-}
-.menu {
-  background-color:#f0f1ee;
-  padding:0.5em;
-  padding-left:3.5em;
-  line-height:1.5em;
-  width: 170px;
-  height:6em;
-  position: absolute;
-  top: 60px;
-}
-.wrap:hover .menu {
-   right: -7px;
- }
- .menu a {
-   font-family: 'Open Sans Condensed', sans-serif;
-   text-decoration:none;
-   font-family:Helvetica;
-   margin-bottom:0.5em;
-   color:black;
- }
- .menu a:hover {
-   color:#8FD4D9;
- }
 .fa-calendar-o {
   float:left;
   position:absolute;
@@ -66,23 +27,22 @@ header {
   left:0;
   padding:0.5em;
   font-size:1.7em;
-  text-shadow: 3px 3px white;
-}
-.main-container {
-  margin:0 auto;
-  display:block;
-  max-width: 50%;
+  color:#EEEDCF;
 }
 .search-form {
   display:block;
+  width:50%;
+  margin:auto;
 }
 .search-bar {
   width: 100%;
   border-radius:2em;
   font-size:1em;
-  margin-top:1em;
+  margin-top:1.5em;
   margin-bottom:1em;
   text-align:center;
+  background:#EEEDCF;
+  color:#61A0AD;
 }
 footer, .btn-delete-appointment {
   box-sizing: border-box;
@@ -92,8 +52,9 @@ footer, .btn-delete-appointment {
   bottom:0;
   left: 0;
   height: 2em;
-  border: 1px solid black;
-  background-color:#f0f1ee;
+  border: 0.5px solid black;
+  background-color:#61A0AD;
+  opacity: 0.9;
 }
 .btn-add-appointment, .btn-delete-appointment{
   margin-left:46%;
@@ -110,14 +71,13 @@ footer, .btn-delete-appointment {
 .btn-delete-appointment{
   display: none;
   }
-.add-appointment:hover {
-  background-color:#8FD4D9;
-  color:white;
-  }
 .active-appointments {
-  border: 2px dashed black;
-  background-color:red;
+  background-color:#61A0AD;
   height:5em;
+  border-radius: 15px;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:2em;
 }
 .new-appointment-form {
   background-color:#8FD4D9;
@@ -138,7 +98,6 @@ footer, .btn-delete-appointment {
   margin-right:10%;
   margin-left:10%;
   margin-top:10%;
-
 }
 .appointment-form input {
   font-size:2em;
@@ -146,6 +105,11 @@ footer, .btn-delete-appointment {
   margin-bottom: 0.5em;
   border-radius:10px;
 }
-.menu {
-  display:none;
+.new-appointment-footer {
+  text-align:center;
+}
+.btn-submit-new {
+  font-size:2.2em;
+  text-decoration:none;
+  color:#EEEDCF;
 }

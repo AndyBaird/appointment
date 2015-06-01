@@ -8,7 +8,7 @@ app.ObjectStore.prototype = {
     this.save();
   },
   load: function () {
-    this.all = JSON.parse(localStorage.getItem('ObjectStore')) || [];
+    this.all = JSON.parse(localStorage.getItem('ObjectStore')) || {};
   },
   save: function () {
     localStorage.setItem('ObjectStore', JSON.stringify(this.all));
